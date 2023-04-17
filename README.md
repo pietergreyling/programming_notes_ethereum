@@ -1,2 +1,2 @@
-# programming_notes_ethereum
-Ethereum Programming Notes
+# Ethereum Programming Notes
+These notes help to aid my short term memory.
