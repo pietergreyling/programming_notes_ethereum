@@ -5,6 +5,20 @@ These notes help to aid my short term memory.
 
 ![EVM Architecture Overview](./images/evm.png)
 
+#### The EVM Stack / Instructions / Gas
+
+- https://ethereum.org/en/developers/docs/evm/#evm-instructions
+
+The EVM executes as a stack machine(opens in a new tab)↗ with a depth of 1024 items. Each item is a 256-bit word, which was chosen for the ease of use with 256-bit cryptography (such as Keccak-256 hashes or secp256k1 signatures).
+
+During execution, the EVM maintains a transient memory (as a word-addressed byte array), which does not persist between transactions.
+
+Contracts, however, do contain a Merkle Patricia storage trie (as a word-addressable word array), associated with the account in question and part of the global state.
+
+Compiled smart contract bytecode executes as a number of EVM opcodes, which perform standard stack operations like XOR, AND, ADD, SUB, etc. The EVM also implements a number of blockchain-specific stack operations, such as ADDRESS, BALANCE, BLOCKHASH, etc.
+
+![EVM Stack / Instructions / Gas](./images/gas.png)
+
 ## Resources
 
 ### The Ethereum Virtual Machine
