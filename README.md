@@ -1,2 +1,14 @@
 # Ethereum Programming Notes
 These notes help to aid my short term memory.
+
+## Resources
+
+### The Ethereum Virtual Machine (EVM)
+
+- https://ethereum.org/en/developers/docs/evm/
+
+The EVM’s physical instantiation can’t be described in the same way that one might point to a cloud or an ocean wave, but it does exist as one single entity maintained by thousands of connected computers running an Ethereum client.
+
+The Ethereum protocol itself exists solely for the purpose of keeping the continuous, uninterrupted, and immutable operation of this special state machine. It's the environment in which all Ethereum accounts and smart contracts live. At any given block in the chain, Ethereum has one and only one 'canonical' state, and the EVM is what defines the rules for computing a new valid state from block to block.
+
+
